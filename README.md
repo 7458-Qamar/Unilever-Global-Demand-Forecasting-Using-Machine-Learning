@@ -1,4 +1,3 @@
-# Unilever-Global-Demand-Forecasting-Using-Machine-Learning
 # Unilever Global Demand Forecasting Using Machine Learning
 
 ## Project Overview
