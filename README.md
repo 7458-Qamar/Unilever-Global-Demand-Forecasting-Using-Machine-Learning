@@ -5,8 +5,6 @@ The goal is to accurately predict **product-level demand (Units Sold)** using hi
 
 The project demonstrates an **end-to-end ML workflow**, from data exploration and feature engineering to model training, evaluation, and business interpretation — without using deep learning.
 
----
-
 ## Business Problem
 Unilever operates across multiple regions and product categories.  
 Inaccurate demand forecasts can lead to:
@@ -15,8 +13,6 @@ Inaccurate demand forecasts can lead to:
 - Inefficient supply chain planning  
 
 The objective is to **forecast future demand** to support better inventory, pricing, and marketing decisions.
-
----
 
 ## Dataset Description
 - **Rows:** 1200  
@@ -40,14 +36,10 @@ The objective is to **forecast future demand** to support better inventory, pric
 - Online Sales Percent  
 - Customer Satisfaction  
 
----
-
 ## Machine Learning Objective
 > Predict future **Units Sold** using historical sales data and influencing factors such as pricing, promotions, marketing, inventory, and seasonality.
 
 This is a **supervised regression and time-series forecasting problem**.
-
----
 
 ## Exploratory Data Analysis (EDA)
 The following analyses were performed:
@@ -61,8 +53,6 @@ The following analyses were performed:
 - Correlation heatmap of numeric variables  
 
 These analyses helped identify key demand drivers and seasonality patterns.
-
----
 
 ## Feature Engineering
 ### Time-Based Features
@@ -86,14 +76,10 @@ These analyses helped identify key demand drivers and seasonality patterns.
   - Product Name  
   - Promotion Type  
 
----
-
 ## Train–Test Strategy
 - Data sorted chronologically  
 - **80% training data**, **20% testing data**  
 - Time-based split to prevent data leakage  
-
----
 
 ## Model Used
 ### Random Forest Regressor
@@ -106,8 +92,6 @@ Chosen because:
 - Number of trees: 300  
 - Maximum depth: 15  
 - Minimum samples split: 5  
-
----
 
 ## Evaluation Metrics
 The model was evaluated using:
@@ -122,8 +106,6 @@ The model was evaluated using:
 
 This indicates strong predictive performance for demand forecasting.
 
----
-
 ## Feature Importance Insights
 Top drivers of demand identified by the model:
 1. Inventory Level  
@@ -136,15 +118,11 @@ Top drivers of demand identified by the model:
 
 These insights align with real-world FMCG demand behavior.
 
----
-
 ## Results Visualization
 - Feature importance bar chart  
 - Actual vs predicted demand over time  
 
 The predicted demand closely follows actual trends, validating the model’s effectiveness.
-
----
 
 ## Business Impact
 This forecasting model can help Unilever:
@@ -154,15 +132,11 @@ This forecasting model can help Unilever:
 - Improve revenue predictability  
 - Enhance supply chain efficiency  
 
----
-
 ## Technologies Used
 - Python  
 - Pandas, NumPy  
 - Matplotlib, Seaborn  
 - Scikit-learn  
-
----
 
 ## Future Improvements
 - Try Gradient Boosting or XGBoost  
@@ -170,12 +144,9 @@ This forecasting model can help Unilever:
 - Perform region-specific forecasting  
 - Build scenario simulations for pricing and promotions  
 
----
-
 ## Conclusion
 This project demonstrates a **complete, production-style demand forecasting pipeline** using classical machine learning techniques.  
 It combines strong data analysis, feature engineering, and model interpretability to deliver actionable business insights.
-
 
 ## Author
 Qamar Mehmood  
